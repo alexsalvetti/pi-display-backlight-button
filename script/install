@@ -4,15 +4,15 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-echo "=> Installing shutdown listener...\n"
-sudo cp listen-for-shutdown.py /usr/local/bin/
-sudo chmod +x /usr/local/bin/listen-for-shutdown.py
+echo "=> Installing display listener...\n"
+sudo cp listen-display.py /usr/local/bin/
+sudo chmod +x /usr/local/bin/listen-display.py
 
-echo "=> Starting shutdown listener...\n"
-sudo cp listen-for-shutdown.sh /etc/init.d/
-sudo chmod +x /etc/init.d/listen-for-shutdown.sh
+echo "=> Starting display listener...\n"
+sudo cp listen-display.sh /etc/init.d/
+sudo chmod +x /etc/init.d/listen-display.sh
 
-sudo update-rc.d listen-for-shutdown.sh defaults
-sudo /etc/init.d/listen-for-shutdown.sh start
+sudo update-rc.d listen-display.sh defaults
+sudo /etc/init.d/listen-display.sh start
 
-echo "Shutdown listener installed."
+echo "Display listener installed."
