@@ -1,4 +1,4 @@
-# pi-display-led-button
+# pi-display-backlight-button
 
 Scripts taken from the [Pi power button guide](https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi) on howchoo, modified for turning on and off the backlight of a display.
 
